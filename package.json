@@ -1,0 +1,23 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CosmicVoiid/battleship.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CosmicVoiid/battleship/issues"
+  },
+  "homepage": "https://github.com/CosmicVoiid/battleship#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
