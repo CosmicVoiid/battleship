@@ -109,3 +109,23 @@ test("check if gameboard allSunk works", () => {
 	gameboard.receiveAttack(5, 1);
 	expect(gameboard.allSunk()).toBe(true);
 });
+
+test("test computer AI if it returns random coordinates", () => {
+	const gameboard1 = new Gameboard(10);
+	const playerAI = new Player(1, gameboard1);
+	expect(typeof playerAI.computerAI()).toBe("object");
+});
+
+test("test computer AI if it returns unused coordinates", () => {
+	const gameboard1 = new Gameboard(10);
+	const playerAI = new Player(1, gameboard1);
+	for (let i = 0; i < 10; i++) {
+		for (let j = 0; j < 9; j++) {
+			gameboard1.arrayMiss.push([i, j]);
+		}
+	}
+	playerAI.computerAI();
+	console.log(playerAI.computerAI());
+	console.log(gameboard1.arrayMiss);
+	expect(playerAI.computerAI()).not.toBe([3, 3]);
+});
