@@ -5,11 +5,23 @@
 	</head>
 
 	<body>
+		<header id="turn" class="closed">Player 1 Turn</header>
 		<div class="grid-container" id="grid-container1">
+			<div class="screen" id="player1-screen"></div>
 			<div class="grid" id="grid1"></div>
 		</div>
 		<div class="grid-container" id="grid-container2">
 			<div class="grid" id="grid2"></div>
+		</div>
+
+		<div class="screen closed" id="player1-screen"></div>
+		<div class="screen closed" id="player2-screen"></div>
+		<div class="menu">
+			<div class="info">Place your</div>
+			<button class="rotate">Rotate</button>
+			<button class="clear">Clear</button>
+			<button class="rnd-btn">Randomize</button>
+			<button class="start-btn">Start Game</button>
 		</div>
 		<script src="script.js"></script>
 	</body>

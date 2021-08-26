@@ -23,5 +23,53 @@ body {
 	grid-template-rows: repeat(10, 1fr);
 	grid-template-columns: repeat(10, 1fr);
 	background-color: blue;
-	grid-gap: 5px 5px;
+	grid-gap: 1px 1px;
+}
+
+.tile {
+	background-color: lightblue;
+}
+
+.screen {
+	position: absolute;
+	height: 100vh;
+	width: 50vw;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.closed {
+	display: none !important;
+}
+
+#player1-screen {
+	left: 0;
+	top: 0;
+}
+
+#player2-screen {
+	right: 0;
+	top: 0;
+}
+
+#turn {
+	position: absolute;
+	top: 10%;
+}
+
+.menu {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #eee;
+	height: 100vh;
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.info {
+	margin-bottom: 25%;
 }
